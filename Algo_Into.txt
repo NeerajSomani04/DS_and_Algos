@@ -1,1 +1,28 @@
-Asymptotic Analysis, we evaluate the performance of an algorithm in terms of input size (we don’t measure the actual running time). We calculate, how does the time (or space) taken by an algorithm increases with the input size.
+Engligh meaning of Asymptotic - A curve and a line that get closer but do not intersect
+
+1. Asymptotic Analysis --> Used to evaluate the performance of an algorithm in terms of input size (we don’t measure the actual running time). We calculate, how does the time (or space) taken by an algorithm increases with the input size.
+
+Linear Search (order of growth is linear) and other way is Binary Search (order of growth is logarithmic).
+** we ignore constants in Asymptotic Analysis.
+
+The main idea of asymptotic analysis is to have a measure of efficiency of algorithms that doesn’t depend on machine specific constants, and doesn’t require algorithms to be implemented and time taken by programs to be compared. 
+
+2. (Worst, Average and Best Cases) -->  three cases to analyze an algorithm:
+
+Worst Case Analysis (Usually always considered) --> means, what case/situation can cause max number of operation
+we calculate upper bound on running time of an algorithm. We must know the case that causes maximum number of operations to be executed. 
+for example, in linear search, worst case could be if value is not present in the array for which we are doing search as we need to iterate complete array. Hence, time complexity would be O(n).
+
+Average Case Analysis (Sometimes considered)  --> we take all possible inputs and calculate computing time, then calculate average of this. Importantly, We must know (or predict) distribution of cases. 
+
+Best Case Analysis (Bogus) --> we calculate lower bound on running time of an algorithm. We must know the case that causes minimum number of operations to be executed. for example, in linear search problem, element x is present at the first location.
+The number of operations in the best case is constant, hence time complexity is O(1).
+
+Although, For some algorithms, all the cases are asymptotically same, i.e., there are no worst and best cases.
+For example, Merge Sort does Θ(nLogn) operations in all cases. 
+but few other sorting algorithms there is difference in worst and best cases.
+
+3 (Asymptotic Notations) --> 
+   --> theta Notation -->
+   --> Big O Notation --->
+   --> Omega Notation -->
