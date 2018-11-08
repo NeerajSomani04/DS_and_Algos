@@ -21,4 +21,4 @@ In Binary tree, number of leaf nodes is always one more than nodes with two chil
 
 Time Complexity of Tree Traversal: O(n)
 
-Examples : tree in general is for the things that form a hierarchy. like, File structures. Another example, useful is storing heirarchical objects like JavaScript Document Object Model considers HTML page as a tree with nesting of tags as parent child relations.
+Examples : tree in general is for the things that form a hierarchy. like, File structures. Another example, useful in storing heirarchical objects like JavaScript Document Object Model considers HTML page as a tree with nesting of tags as parent child relations.
