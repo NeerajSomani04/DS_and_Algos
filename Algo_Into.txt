@@ -1,4 +1,4 @@
-Engligh meaning of Asymptotic - A curve and a line that get closer but do not intersect
+English meaning of Asymptotic - A curve and a line that get closer but do not intersect
 
 1. Asymptotic Analysis --> Used to evaluate the performance of an algorithm in terms of input size (we don’t measure the actual running time). We calculate, how does the time (or space) taken by an algorithm increases with the input size.
 
@@ -23,6 +23,32 @@ For example, Merge Sort does Θ(nLogn) operations in all cases.
 but few other sorting algorithms there is difference in worst and best cases.
 
 3 (Asymptotic Notations) --> 
-   --> theta Notation -->
-   --> Big O Notation --->
-   --> Omega Notation -->
+   --> theta Notation --> bounds a functions from above and below, so it defines exact asymptotic behavior. means, need to calculate below and above behavoir seperately.
+   --> Big O Notation ---> defines an upper bound of an algorithm, means including all below ones.
+   --> Omega Notation --> provides an asymptotic lower bound. not so useful.
+
+little o and little omega --> Little o provides strict upper bound (equality condition is removed from Big O) and little omega provides strict lower bound (equality condition removed from big omega)
+
+4 (Analysis of Loops) --> 
+Time complexity of a function (or set of statements) is considered as:
+1. O(1) -->  If it doesn’t contain loop, recursion and call to any other non-constant time function.
+For example, a swap() function, A loop or recursion that runs a constant number of times.
+2. O(n) --> if the loop variables is incremented / decremented by a constant amount.
+3. O(n^2) --> Time complexity of nested loops is equal to the number of times the innermost statement is executed. For example Selection sort and Insertion Sort have O(n2) time complexity.
+4. O(log n) --> if the loop variables is divided / multiplied by a constant amount. For example, Binary Search.
+5. O(log log n) --> if the loop variables is reduced / increased exponentially by a constant amount. 
+
+**** How to combine time complexities of consecutive loops?
+When there are consecutive loops, we calculate time complexity as sum of time complexities of individual loops.
+
+**** How to calculate time complexity when there are many if, else statements inside loops?
+ we need to consider worst case, Need to evaluate the situation when values in if-else conditions cause maximum number of statements to be executed.
+   When the code is too complex to consider all if-else cases, we can get an upper bound by ignoring if else and other complex control statements.
+
+*** How to calculate time complexity of recursive functions?
+To calculate time complexity, we must know how to solve recurrences. which is the next topic discussed below:
+
+Need to solve this Quiz once comfortable, https://www.geeksforgeeks.org/algorithms-gq/analysis-of-algorithms-gq/
+
+5 (Solving Recurrences) --> 
+ 
