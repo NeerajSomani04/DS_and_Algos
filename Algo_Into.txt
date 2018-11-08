@@ -51,4 +51,33 @@ To calculate time complexity, we must know how to solve recurrences. which is th
 Need to solve this Quiz once comfortable, https://www.geeksforgeeks.org/algorithms-gq/analysis-of-algorithms-gq/
 
 5 (Solving Recurrences) --> 
+ For example in Merge Sort, to sort a given array, we divide it in two halves and recursively repeat the process for the two halves.  Finally we merge the results. Time complexity of Merge Sort can be written as T(n) = 2T(n/2) + cn.
  
+There are mainly three ways for solving recurrences.
+
+1) Substitution Method: We make a guess for the solution and then we use mathematical induction to prove that the guess is correct or incorrect.
+
+2) Recurrence Tree Method: In this method, we draw a recurrence tree and calculate the time taken by every level of tree. Finally, we sum the work done at all levels. To draw the recurrence tree, we start from the given recurrence and keep drawing till we find a pattern among levels. The pattern is typically an arithmetic or geometric series.
+
+3) Master Method: is a direct way to get the solution. The master method works only for following type:
+T(n) = aT(n/b) + f(n) where a >= 1 and b > 1 (If possible convert any other type to this type and it will work)
+
+Notes: 
+1) It is not necessary that a recurrence of the form T(n) = aT(n/b) + f(n) can be solved using Master Theorem. The given three cases have some gaps between them. For example, the recurrence T(n) = 2T(n/2) + n/Logn cannot be solved using master method.
+
+2) Case 2 can be extended for f(n) = Θ(ncLogkn)
+If f(n) = Θ(ncLogkn) for some constant k >= 0 and c = Logba, then T(n) = Θ(ncLogk+1n)
+
+If needed, Practice question can be found here for Master Method: http://www.csd.uwo.ca/~moreno//CS424/Ressources/master.pdf
+
+(Amortized Analysis Introduction) --> is used for algorithms where an occasional operation is very slow, but most of the other operations are faster. we analyze a sequence of operations. 
+
+meaning of Amortized --> reduce or extinguish (a debt) by money regularly put aside. (gradually write off the initial cost of (an asset).
+most common examples are are Hash Tables, Disjoint Sets and Splay Trees.
+
+
+(Space Complexity) --> total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input.
+
+Auxiliary Space is the extra space or temporary space used by an algorithm.
+
+For example, if we want to compare standard sorting algorithms on the basis of space, then Auxiliary Space would be a better criteria than Space Complexity. Merge Sort uses O(n) auxiliary space, Insertion sort and Heap Sort use O(1) auxiliary space. Space complexity of all these sorting algorithms is O(n) though.
