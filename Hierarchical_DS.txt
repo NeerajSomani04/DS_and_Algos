@@ -1,0 +1,24 @@
+2 (Binary Tree, BST, Heap and Hash) --> Hierarchical Data Structures
+
+Binary Tree --> (implemented mainly using Links). Each node with two children, Left child and right child
+Binary Tree Representation --> A tree is represented by a pointer to the topmost node in tree. If the tree is empty, then value of root is NULL. 
+A Binary Tree node contains following parts.
+1. Data
+2. Pointer to left child
+3. Pointer to right child
+
+A Binary Tree can be traversed in two ways:
+Depth First Traversal: Inorder (Left-Root-Right), Preorder (Root-Left-Right) and Postorder (Left-Right-Root)
+Breadth First Traversal: Level Order Traversal
+
+Binary Tree Properties:
+Maximum number of nodes = 2h – 1.
+Here h is height of a tree. Height is considered as is maximum number of nodes on root to leaf path
+
+Minimum possible height =  ceil(Log2(n+1))   
+
+In Binary tree, number of leaf nodes is always one more than nodes with two children.
+
+Time Complexity of Tree Traversal: O(n)
+
+Examples : tree in general is for the things that form a hierarchy. like, File structures. Another example, useful is storing heirarchical objects like JavaScript Document Object Model considers HTML page as a tree with nesting of tags as parent child relations.
