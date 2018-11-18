@@ -1,0 +1,20 @@
+Graph --> A Graph is a non-linear data structure consisting of nodes (Vertices) and edges (lines connecting nodes).
+In other words, A Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.
+
+Example for a Graph, the set of vertices V = {0,1,2,3,4} and the set of edges E = {01, 12, 23, 34, 04, 14, 13}.
+
+Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. 
+Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented 
+with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc.
+
+Once again, Graph is a data structure that consists of following two components:
+1. A finite set of vertices also called as nodes.
+2. A finite set of ordered pair of the form (u, v) called as edge. The pair is ordered because (u, v) is not same as (v, u) in case of 
+a directed graph(di-graph). The pair of the form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may 
+contain weight/value/cost.
+
+A Graph, can be created using Array of LinkList, Array of Set, Array of Vectors, etc. Each category has some pros and cons, needs to understand that in detail. 
+
+A set is different from a vector in two ways: it stores elements in a sorted way, and duplicate elements are not allowed. 
+Therefore, this approach cannot be used for graphs containing parallel edges. Since sets are internally implemented as 
+binary search trees, an edge between two vertices can be searched in O(logV) time, where V is the number of vertices in the graph.
