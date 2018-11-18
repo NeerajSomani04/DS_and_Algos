@@ -1,0 +1,18 @@
+Complexity of algorithm http://www.ideserve.co.in/learn/time-and-space-complexity-of-recursive-algorithms
+Stackoverflow . you video 
+Cracking the code interview 
+i) array List 
+ii) stack and queue
+iii) linked list
+iv) Graph 
+https://www.ideserve.co.in/ -Tree , array , string 
+https://www.hiredintech.com/courses/system-design
+https://www.educative.io/collection/page/5668639101419520/5649050225344512/5668600916475904
+https://leetcode.com/problemset/algorithms/
+https://www.hackerrank.com/
+Object oriented chapter from cracking the code interview - 1 day weekend 
+Hard problems in cracking the code interview 
+https://www.mtu.edu/career/students/toolbox/interviews/prepare.pdf
+https://www.quora.com/What-should-I-expect-in-a-Software-Engineer-interview-at-Google-and-how-should-I-prepare
+https://www.youtube.com/watch?v=XKu_SEDAykw
+ Searching algorithms 
