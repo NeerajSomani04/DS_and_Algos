@@ -17,8 +17,8 @@ Queue is used when things don’t have to be processed immediatly, but have to b
 Time Complexity: Time complexity of all operations like enqueue(), dequeue(), isFull(), isEmpty(), front() and rear() is O(1). There is no loop in any of the operations.
 
 Implementation: There are two ways to implement a Queue:
-Using array
-Using linked list
+---> implementing using Array --> front variable stores index value of array for the first item of queue, and rear variable stores index value of array for the last item of queue (not the capacity of Array).
+--> implementing using LL --> Front and Rear bothe are objects of type Node. The front stores the front node of LL and rear stores the last node of LL.
 
 In a Queue data structure, we maintain two pointers, front and rear. 
 The front points the first item of queue and rear points to last item.
@@ -26,3 +26,67 @@ The front points the first item of queue and rear points to last item.
 These two main operations must be implemented efficiently. --> 
 enQueue() This operation adds a new node after rear and moves rear to the next node.
 deQueue() This operation removes the front node and moves front to the next node.
+
+--> Priority Queue is an extension of queue with following properties.
+1) Every item has a priority associated with it.
+2) An element with high priority is dequeued before an element with low priority.
+3) If two elements have the same priority, they are served according to their order in the queue.
+
+A typical priority queue supports following operations.
+insert(item, priority): Inserts an item with given priority. This operation can be implemented by adding an item at end of array in O(1) time.
+getHighestPriority(): Returns the highest priority item. This operation can be implemented by linearly searching the highest priority item in array. This operation takes O(n) time.
+deleteHighestPriority(): Removes the highest priority item. This operation can be implemented by first linearly searching an item, then removing the item by moving all subsequent items one position back. 
+
+We can also use Linked List, time complexity of all operations with linked list remains same as array. The advantage with linked list is deleteHighestPriority() can be more efficient as we don’t have to move items.
+
+How to implement priority queue?
+Using Array: A simple implementation is to use array of following structure.
+
+Using Heaps: (prefered way)
+Heap is generally preferred for priority queue implementation because heaps provide better performance compared arrays or linked list. In a Binary Heap, getHighestPriority() can be implemented in O(1) time, insert() can be implemented in O(Logn) time and deleteHighestPriority() can also be implemented in O(Logn) time.
+With Fibonacci heap, insert() and getHighestPriority() can be implemented in O(1) amortized time and deleteHighestPriority() can be implemented in O(Logn) amortized time.
+
+Priority Queue is used when the objects are supposed to be processed based on the priority. The PriorityQueue is based on the priority heap. The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used. Few important points on Priority Queue are as follows:
+
+--> PriorityQueue doesn’t permit NULL pointers.
+--> We can’t create PriorityQueue of Objects that are non-comparable
+--> PriorityQueue are unbound queues.
+--> The head of this queue is the least element with respect to the specified ordering. If multiple elements are tied for least value, the head is one of those elements — ties are broken arbitrarily.
+--> The queue retrieval operations poll, remove, peek, and element access the element at the head of the queue.
+--> It inherits methods from AbstractQueue, AbstractCollection, Collection and Object class.
+
+PriorityQueue in Java -->  https://www.geeksforgeeks.org/priority-queue-class-in-java-2/
+
+
+----> Constructors of PriorityQueue class --> 
+
+PriorityQueue(): Creates a PriorityQueue with the default initial capacity (11) that orders its elements according to their natural ordering.
+PriorityQueue(Collection c): Creates a PriorityQueue containing the elements in the specified collection.
+PriorityQueue(int initialCapacity): Creates a PriorityQueue with the specified initial capacity that orders its elements according to their natural ordering.
+PriorityQueue(int initialCapacity, Comparator comparator): Creates a PriorityQueue with the specified initial capacity that orders its elements according to the specified comparator.
+PriorityQueue(PriorityQueue c): Creates a PriorityQueue containing the elements in the specified priority queue.
+PriorityQueue(SortedSet c): Creates a PriorityQueue containing the elements in the specified sorted set.
+
+---> Methods in PriorityQueue class: --> 
+
+boolean add(E element): This method inserts the specified element into this priority queue.
+public remove(): This method removes a single instance of the specified element from this queue, if it is present
+public poll(): This method retrieves and removes the head of this queue, or returns null if this queue is empty.
+public peek(): This method retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+Iterator iterator(): Returns an iterator over the elements in this queue.
+boolean contains(Object o): This method returns true if this queue contains the specified element
+void clear(): This method is used to remove all of the contents of the priority queue.
+boolean offer(E e): This method is used to insert a specific element into the priority queue.
+int size(): The method is used to return the number of elements present in the set.
+toArray(): This method is used to return an array containing all of the elements in this queue.
+Comparator comparator(): The method is used to return the comparator that can be used to order the elements of the queue.
+
+
+
+
+
+
+
+
+
+
