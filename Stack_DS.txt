@@ -1,0 +1,37 @@
+Stack is a linear data structure which follows a particular order in which the operations are performed. 
+The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+
+Stack Class in Java --> 
+Java collection framework has Stack class that extends Vector class of Java.
+
+The hierarchy of Stack class in Java --> 
+Stack (class) ----Extends---> Vector (class) ----Implements---> List (Interface) ----Implements---> Collection (Interface) ----Implements---> Iterable (Interface)
+
+The class supports one default constructor Stack() which is used to create an empty stack.
+
+This class also provides five basic functionalities / Operations -->
+Push, Pop, Empty, Search and Peak
+
+Methods in Stack class -->
+
+Object push(Object element) : Pushes an element on the top of the stack.
+Object pop() : Removes and returns the top element of the stack. An ‘EmptyStackException’ exception is thrown if we call pop() when the invoking stack is empty.
+Object peek() : Returns the element on the top of the stack, but does not remove it.
+boolean empty() : It returns true if nothing is on the top of the stack. Else, returns false.
+int search(Object element) : It determines whether an object exists in the stack. If the element is found, it returns the position of the element from the top of the stack. Else, it returns -1.
+
+Time Complexities of operations on stack:
+push(), pop(), isEmpty() and peek() all take O(1) time. We do not run any loop in any of these operations.
+
+Implementation:
+There are two ways to implement a stack:
+Using array
+Using linked list
+
+Implementing Stack using Array -->
+Pros: Easy to implement. Memory is saved as pointers are not involved.
+Cons: It is not dynamic. It doesn’t grow and shrink depending on needs at runtime.
+
+Implementing Stack using Linklist -->
+Pros: The linked list implementation of stack can grow and shrink according to the needs at runtime.
+Cons: Requires extra memory due to involvement of pointers.
