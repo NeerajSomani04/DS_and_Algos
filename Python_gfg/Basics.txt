@@ -133,3 +133,36 @@ Rich Library Support
 The Python Standard Library is vary vast.
 Known as the “batteries included” philosophy of Python ;It can help do various things involving regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, email, XML, HTML, WAV files, cryptography, GUI and many more.
 Besides the standard library, there are various other high-quality libraries such as the Python Imaging Library which is an amazingly simple image manipulation library.
+
+
+Keywords in Python | Set 1 -->
+--> True and False in python are same as 1 and 0. True == 1, False == 0
+--> None : This is a special constant used to denote a null value or a void. Its important to remember, 0, any empty container(e.g empty list) do not compute to None.
+It is an object of its own datatype – NoneType. It is not possible to create multiple None objects and can assign it to variables.
+--> and : This a logical operator in python. “and” returns true if both the operands are true. Else returns false.
+--> or : This a logical operator in python. “or” returns true if any one of the operand is true. 
+--> not : This logical operator inverts the truth value.
+7. assert : This function is used for debugging purposes. Usually used to check the correctness of code. If a statement evaluated to true, nothing happens, but when it is false, “AssertionError” is raised . One can also print a message with the error, separated by a comma.
+
+8. break : “break” is used to control the flow of loop. The statement is used to break out of loop and passes the control to the statement following immediately after loop.
+
+9. continue : “continue” is also used to control the flow of code. The keyword skips the current iteration of the loop, but does not end the loop.
+
+10. Pass Statement: We use pass statement to write empty loops. Pass is also used for empty control statement, function and classes.  It is the null statement in python. Nothing happens when this is encountered. This is used to prevent indentation errors and used as a placeholder.
+
+11. class : This keyword is used to declare user defined classes.
+12.  del : del is used to delete a reference to an object. Any variable or list value can be deleted using del.
+13. raise : Also used for exception handling to explicitly raise exceptions.
+
+import : This statement is used to include a particular module into current program.
+
+from : Generally used with import, from is used to import particular functionality from the module imported.
+
+in : This keyword is used to check if a container contains a value. This keyword is also used to loop through the container.
+
+is : This keyword is used to test object identity, i.e to check if both the objects take same memory location or not.
+ 
+---> Print without newline in Python 3.x ---> also, depends on how you use it.
+print("geeks", end =" ") 
+print("geeksforgeeks") 
+output: geeks geeksforgeeks
