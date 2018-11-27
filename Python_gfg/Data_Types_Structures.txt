@@ -1,0 +1,64 @@
+Introduction to DataTypes --> (Strings, Lists, Tuples, Dictionary, Iterations, (Arrays))
+
+Python programs are not compiled, rather they are interpreted. 
+Python files are stored with the extension “.py”. 
+To run your python code file, use this command: python hello.py
+
+Variables need not be declared first in python. They can be used directly. Variables in python are case sensitive as most of the other programming languages.
+Arithmetic operations in python can be performed by using arithmetic operators and some of the in-built functions.
+
+Strings in Python
+A string is a sequence of characters. It can be declared in python by using double quotes. Strings are immutable, i.e., they cannot be changed.
+# Assigning string to a variable 
+a = "This is a string"
+In Python, Strings are arrays of bytes representing Unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string.
+Strings in Python can be created using single quotes or double quotes or even triple quotes.
+
+Accessing characters in Python -->
+In Python, individual characters of a String can be accessed by using the method of Indexing, to access a range of characters in the String, method of slicing is used. Slicing in a String is done by using a Slicing operator (colon). Indexing allows negative address references to access characters from the back of the String, e.g. -1 refers to the last character, -2 refers to the second last character and so on.
+While accessing an index out of the range will cause an IndexError. Only Integers are allowed to be passed as an index, float or other types will cause a TypeError.
+# Printing First character 
+print("\nFirst character of String is: ") 
+print(String1[0]) 
+
+# Printing 3rd to 12th character 
+print("\nSlicing characters from 3-12: ") 
+print(String1[3:12]) 
+
+Deleting/Updating from a String --> not allowed as Strings are immutable, althouth new String can be created with same name.
+In Python, Updation or deletion of characters from a String is not allowed. This will cause an error because item assignment or item deletion from a String is not supported. Although deletion of entire String is possible with the use of a built-in del keyword. This is because Strings are immutable, hence elements of a String cannot be changed once it has been assigned. Only new strings can be reassigned to the same name.
+
+There are many-many functions that can be used to work with string.
+
+Lists in Python
+Lists are one of the most powerful tools in python. They are just like the arrays declared in other languages. But the most powerful thing is that list need not be always homogenous. A single list can contain strings, integers, as well as objects. Lists can also be used for implementing stacks and queues. Lists are mutable, i.e., they can be altered once declared.
+# Declaring a list 
+L = [1, "a" , "string" , 1+2] 
+L.append(6)  
+L.pop()
+
+--> In Python, list is a type of container in Data Structures, which is used to store multiple data at the same time. Unlike Sets, the list in Python are ordered and have a definite count. The elements in a list are indexed according to a definite sequence and the indexing of a list is done with 0 being the first index. Each element in the list has its definite place in the list, which allows duplicating of elements in the list, with each element having its own distinct place and credibility.
+Note- Lists are a useful tool for preserving a sequence of data and further iterating over it.
+Note – Unlike Sets, list may contain mutable elements.
+
+few important list functions -->
+Append()	Add an element to the end of the list
+Extend()	Add all elements of a list to the another list
+Insert()	Insert an item at the defined index
+Remove()	Removes an item from the list
+Pop()	Removes and returns an element at the given index
+Clear()	Removes all items from the list
+Index()	Returns the index of the first matched item
+Count()	Returns the count of number of items passed as an argument
+Sort()	Sort items in a list in ascending order
+Reverse()	Reverse the order of items in the list
+copy()	Returns a copy of the list
+
+Tuples in Python
+A tuple is a sequence of immutable Python objects. Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples are usually faster than lists.
+tup = (1, "a", "string", 1+2) 
+print(tup)
+
+Iterations in Python
+Iterations or looping can be performed in python by ‘for’ and ‘while’ loops. We can also iterate on strings, lists, and tuples.
+
