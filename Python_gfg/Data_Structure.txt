@@ -55,10 +55,70 @@ Reverse()	Reverse the order of items in the list
 copy()	Returns a copy of the list
 
 Tuples in Python
-A tuple is a sequence of immutable Python objects. Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples are usually faster than lists.
+A tuple is a sequence/collection of immutable Python objects. The sequence of values stored in a tuple can be of any type, and they are indexed by integers. 
+Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples are usually faster than lists.
+Also, Tuples are hashable whereas lists are not.
 tup = (1, "a", "string", 1+2) 
 print(tup)
 
+Tuples are immutable, and usually, they contain a sequence of heterogeneous elements that are accessed via unpacking or indexing (or even by attribute in the case of named tuples). Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list.
+
+Note – Creation of Python tuple without the use of parentheses is known as Tuple Packing.
+
+# Creating a Tuple  
+# with repetition 
+Tuple1 = ('Geeks',) * 3
+print("\nTuple with repetition: ") 
+print(Tuple1) 
+Output --> ('Geeks', 'Geeks', 'Geeks')
+
+Concatenation of tuple is the process of joining of two or more Tuples. Concatenation is done by the use of ‘+’ operator. Concatenation of tuples is done always from the end of the original tuple. Other arithmetic operations do not apply on Tuples.
+Note- Only same datatypes can be combined with concatenation, an error arises if a list and a tuple are combined.
+
+# Concatenaton of tuples 
+Tuple1 = (0, 1, 2, 3) 
+Tuple2 = ('Geeks', 'For', 'Geeks') 
+  
+Tuple3 = Tuple1 + Tuple2 
+Output --> (0, 1, 2, 3, 'Geeks', 'For', 'Geeks')
+
+Slicing of tuple is same as List.
+Deleting a tuple --> Entire tuple gets deleted by the use of del() method.
+Note- Printing of Tuple after deletion results to an Error.
+
 Iterations in Python
 Iterations or looping can be performed in python by ‘for’ and ‘while’ loops. We can also iterate on strings, lists, and tuples.
+
+Python Sets
+In Python, Set is an unordered collection of data type that is iterable, mutable and has no duplicate elements.
+Set in Python is equivalent to sets in mathematics.
+Various standard operations (union, intersection, difference) can be performed on sets.
+major advantage of using a set, highly optimized method for checking whether a specific element is contained in the set.
+
+Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by ‘comma’. Type of elements in a set need not be the same, various mixed up data type values can also be passed to the set.
+
+Note – A set cannot have mutable elements like a list, set or dictionary, as its elements.
+Note – Lists cannot be added to a set as elements because Lists are not hashable whereas Tuples can be added because tuples are immutable and hence Hashable.
+
+example, Set with the use of Mixed Values
+{1, 2, 4, 'Geeks', 6, 'For'}
+
+Frozen sets in Python are immutable objects that only support methods and operators that produce a result without affecting the frozen set or sets to which they are applied. 
+
+few commonly used set methods 
+add()	Adds an element to a set
+remove()	Removes an element from a set. If the element is not present in the set, raise a KeyError
+clear()	Removes all elements form a set
+copy()	Returns a shallow copy of a set
+pop()	Removes and returns an arbitary set element. Raise KeyError if the set is empty
+update()	Updates a set with the union of itself and others
+union()	Returns the union of sets in a new set
+
+Python Dictionary --> 
+
+
+
+
+
+
 
