@@ -114,7 +114,57 @@ pop()	Removes and returns an arbitary set element. Raise KeyError if the set is 
 update()	Updates a set with the union of itself and others
 union()	Returns the union of sets in a new set
 
-Python Dictionary --> 
+Python Dictionary --> (very similar to JSON file structure)
+Dictionary in Python is an unordered collection of data values, used to store data values like a map.
+Dictionary holds key:value pair. Each key-value pair in a Dictionary is separated by a colon :, whereas each key is separated by a ‘comma’.
+Keys of a Dictionary must be unique and of immutable data type such as Strings, Integers and tuples, but the key-values can be repeated and be of any type.
+Note – Keys in a dictionary doesn’t allows Polymorphism.
+Note – Dictionary keys are case sensitive, same name but different cases of Key will be treated distinctly.
+
+Dict[Key] = ‘Value’.  --> to add a value to dic
+print(Dict[Key]) --> will be used to get value of a key in a dictionary
+Note- While adding a value, if the key value already exists, the value gets updated otherwise a new Key with the value is added to the Dictionary.
+
+some commonly used Dictionary methods -->
+copy()	They copy() method returns a shallow copy of the dictionary.
+clear()	The clear() method removes all items from the dictionary.
+get()	It is a conventional method to access a value for a key.
+dictionary_name.values()	returns a list of all the values available in a given dictionary.
+str()	Produces a printable string representation of a dictionary.
+update()	Adds dictionary dict2’s key-values pairs to dict
+setdefault()	Set dict[key]=default if key is not already in dict
+keys()	Returns list of dictionary dict’s keys
+items()	Returns a list of dict’s (key, value) tuple pairs
+has_key()	Returns true if key in dictionary dict, false otherwise
+fromkeys()	Create a new dictionary with keys from seq and values set to value.
+type()	Returns the type of the passed variable.
+cmp()	Compares elements of both dict.
+
+
+Python -- Arrays -->
+Python in its definition can also handle containers with specified data types. 
+In python there is a module named “array“. They can be useful when we have to manipulate only a specific data type values.
+array(data type, value list) :- This function is used to create an array with data type and value list specified in its arguments. 
+example code:--
+# importing "array" for array operations 
+import array 
+# initializes array with signed integers 
+arr = array.array('i', [1, 2, 3])  
+
+There are many functions that can be used to perform different operations on Arrays. like, append(), remove(), pop(), reverse().
+
+Some more imp functions -->
+typecode :- This function returns the data type by which array is initialised.
+itemsize :- This function returns size in bytes of a single array element.
+buffer_info() :- Returns a tuple representing the address in which array is stored and number of elements in it.
+count() :- This function counts the number of occurrences of argument mentioned in array.
+extend(arr) :- This function appends a whole array mentioned in its arguments to the specified array.
+fromlist(list) :- This function is used to append a list mentioned in its argument to end of array.
+tolist() :- This function is used to transform an array into a list.
+
+
+
+
 
 
 
