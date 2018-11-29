@@ -1,0 +1,60 @@
+What is the maximum possible value of an integer in Python ?
+In Python, value of an integer is not restricted by the number of bits and can expand to the limit of the available memory
+
+Global variable vs Local variable -->
+global variable is defined outside of function. 
+Local variable defined inside of function. 
+If we want to use global variable and local variable with same name, then global variable, needs to be use with global keyword.
+
+Packing and Unpacking Arguments in Python -->
+We use two operators * (for tuples) and ** (for dictionaries).
+https://www.geeksforgeeks.org/packing-and-unpacking-arguments-in-python/
+
+---> end parameter in print() function --> 
+By default python’s print() function ends with a newline.
+how to print without newline, By default, the value of this parameter is ‘\n’, i.e. the new line character. You can end a print statement with any character/string using this parameter.
+# ends the output with a <space>  
+print("Welcome to" , end = ' ')  
+print("GeeksforGeeks", end = ' ') 
+
+Type Conversion in Python --> to convert values of one type to another
+1. int(a,base) : This function converts any data type to integer. ‘Base’ specifies the base in which string is if data type is string.
+2. float() : This function is used to convert any data type to a floating point number.
+3. ord() : This function is used to convert a character to integer.
+4. hex() : This function is to convert integer to hexadecimal string.
+5. oct() : This function is to convert integer to octal string.
+6. tuple() : This function is used to convert to a tuple.
+7. set() : This function returns the type after converting to set.
+8. list() : This function is used to convert any data type to a list type.
+9. dict() : This function is used to convert a tuple of order (key,value) into a dictionary.
+
+10. str() : Used to convert integer into a string.
+
+11. complex(real,imag) : : This function converts real numbers to complex(real,imag) number.
+
+Byte Objects vs String in Python --->
+Byte objects are sequence of Bytes, whereas Strings are sequence of characters.
+Byte objects are in machine readable form internally, Strings are only in human readable form.
+Since Byte objects are machine readable, they can be directly stored on the disk. Whereas, Strings need encoding before which they can be stored on disk.
+
+Converting Strings to byte objects is termed as encoding. 
+This is necessary so that the text can be stored on disk using mapping using ASCII or UTF-8 encoding techniques.
+encode() and decode() are the methods used to perform this tasks.
+
+Python: In Python, there is a simple and syntactically neat construct to swap variables, we just need to write “x, y = y, x”.
+
+Underscore (_) in Python
+Following are different places where _ is used in Python:
+
+Single Underscore:
+In Interpreter --> _ returns the value of last executed expression value in Python Prompt/Interpreter
+After a name --> this is used to avoid variable names same as python reserved keyword names.
+Before a name
+Double Underscore:
+__leading_double_underscore
+__before_after__
+
+https://www.geeksforgeeks.org/underscore-_-python/  --> need to read this again and make notes.
+https://www.geeksforgeeks.org/private-variables-python/ --> need to start from here.
+
+
