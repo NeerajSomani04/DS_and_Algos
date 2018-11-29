@@ -69,6 +69,65 @@ __name__ (A Special variable) in Python --> https://www.geeksforgeeks.org/__name
 Since there is no main() function in Python, when the command to run a python program is given to the interpreter, the code that is at level 0 indentation is to be executed. However, before doing that, it will define a few special variables. __name__ is one such special variable. If the source file is executed as the main program, the interpreter sets the __name__ variable to have a value “__main__”. If this file is being imported from another module, __name__ will be set to the module’s name.
 __name__ is a built-in variable which evaluates to the name of the current module. Thus it can be used to check whether the current script is being run on its own or being imported somewhere else by combining it with if statement, as shown below.
 
+Basic Operators in Python -->
+1. Arithmetic operators: Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication and division.
+/	Division (float): divides the first operand by the second	x / y
+//	Division (floor): divides the first operand by the second	x // y
+%	Modulus: returns the remainder when first operand is divided by the second	x % y
 
+In Python 3, ‘/’ operator does floating point division for both int and float arguments.
 
+# Examples of Arithmetic Operator 
+a = 9
+b = 4
+# Division(float) of number  
+div1 = a / b # output will be 2.25
+# Division(floor) of number  
+div2 = a // b # output will be 2
+# Modulo of both number 
+mod = a % b # output will be 1
 
+2. Relational Operators like, >, <. ==, !=, <=, >=.
+
+3. Logical operators: Logical operators perform Logical AND, Logical OR and Logical NOT operations.
+and	Logical AND: True if both the operands are true	(Syntax --> x and y)
+or	Logical OR: True if either of the operands is true	(Syntax --> x or y)
+not	Logical NOT: True if operand is false	(Syntax --> not x)
+
+4. Bitwise operators: Bitwise operators acts on bits and performs bit by bit operation. Need to understand it more when needed.
+
+&	Bitwise AND	x & y
+|	Bitwise OR	x | y
+~	Bitwise NOT	~x
+^	Bitwise XOR	x ^ y
+>>	Bitwise right shift	x>>
+<<	Bitwise left shift	x<<
+
+Note --> “Logical not or !” is meant for boolean values and “bitwise not or ~” is for integers. 
+python do auto promotion of boolean to integer type when an integer operator is applied. But Java doesn’t do it.
+
+5. Assignment operators: Assignment operators are used to assign values to the variables.
+
+6. Special operators: There are some special type of operators like-
+6.1 Identity operators- 
+is and is not are the identity operators both are used to check if two values are located on the same part of the memory. Two variables that are equal does not imply that they are identical.
+is          True if the operands are identical 
+is not      True if the operands are not identical
+
+6.2 Membership operators-
+in and not in are the membership operators; used to test whether a value or variable is in a sequence.
+in            True if value is found in the sequence
+not in        True if value is not found in the sequence
+
+Important Points:
+
+First the given condition is evaluated (a < b), then either a or b is returned based on the Boolean value returned by the condition
+Order of the arguments in the operator is different from other languages like C/C++ (See C/C++ ternary operators).
+Conditional expressions have the lowest priority amongst all Python operations.
+
+Any & All in Python -->
+Any and All are two built ins provided in python used for successive And/Or.
+Any ---> Returns true if any of the items is True. It returns False if empty or all are false.
+All --> Returns true if all of the items are True (or if the iterable is empty).
+
+Need to start from here --> https://www.geeksforgeeks.org/inplace-vs-standard-operators-python/
