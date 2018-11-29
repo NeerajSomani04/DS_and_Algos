@@ -49,12 +49,26 @@ Following are different places where _ is used in Python:
 Single Underscore:
 In Interpreter --> _ returns the value of last executed expression value in Python Prompt/Interpreter
 After a name --> this is used to avoid variable names same as python reserved keyword names.
-Before a name
-Double Underscore:
-__leading_double_underscore
-__before_after__
+Before a name --> indicates to programmer that It is for internal use only, that can be modified whenever class want. (treated as non-public). 
+Python does not specify truly private so this ones can be call directly from other modules if it is specified in __all__, We also call it weak Private. 
 
-https://www.geeksforgeeks.org/underscore-_-python/  --> need to read this again and make notes.
-https://www.geeksforgeeks.org/private-variables-python/ --> need to start from here.
+Double Underscore:
+__leading_double_underscore --> Leading double underscore tell python interpreter to rewrite name in order to avoid conflict in subclass.Interpreter changes variable name with class extension and that feature known as the Mangling. Most offen this becomes a Private member.
+
+__before_after__  --> considers special methods in Python.  Python provide this methods to use it as the operator overloading depending on the user.
+Python provides this convention to differentiate between the user defined function with the module’s function
+These methods provide special syntactic features to the names. For example, __file__ indicates the location of Python file, __eq__ is executed when a == b expression is executed.
+
+
+Private Variables in Python -->
+In Python, there is no existence of “Private” instance variables which cannot be accessed except inside an object. However, a convention is being followed by most Python code and coders i.e., a name prefixed with an underscore, For e.g. _geek should be treated as a non-public part of the API or any Python code, 
+
+mangling, which means that there is a limited support for a valid use-case for class-private members basically to avoid name clashes of names with names defined by subclasses.
+
+__name__ (A Special variable) in Python --> https://www.geeksforgeeks.org/__name__-special-variable-python/
+Since there is no main() function in Python, when the command to run a python program is given to the interpreter, the code that is at level 0 indentation is to be executed. However, before doing that, it will define a few special variables. __name__ is one such special variable. If the source file is executed as the main program, the interpreter sets the __name__ variable to have a value “__main__”. If this file is being imported from another module, __name__ will be set to the module’s name.
+__name__ is a built-in variable which evaluates to the name of the current module. Thus it can be used to check whether the current script is being run on its own or being imported somewhere else by combining it with if statement, as shown below.
+
+
 
 
