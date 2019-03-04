@@ -1,0 +1,16 @@
+Introduction -->
+
+What Is Computer Science?
+
+Computer science is the study of problems, problem-solving, and the solutions that come out of the problem-solving process.
+Computer science is therefore a study of underlying patterns in problems and of developing methods to systematically solving problems.
+
+Computer science, as it pertains to the problem-solving process itself, is also the study of abstraction. Abstraction allows us to view the problem and solution in such a way as to separate the so-called logical and physical perspectives.
+
+functionality provided by application to do something is known as interfaces. for example, using car by owner. this is the logical perspective of the automobile.
+On the other hand, the mechanic who must repair your automobile takes a very different point of view. mechanics should not only know how to drive car but also how each part of the car performs and works. This is known as the physical perspective, the details that take place “under the hood.”
+
+
+
+
+
