@@ -24,3 +24,9 @@ Space complexity --> at any given time how many max function calls will be runni
 average case --> will be in between best and worst case. but mostly average case is same as best case.
 
 
+two approach discussed for partitioning -->
+
+1) choose pivot at the start of the array and partition the array based on two pointer, start and end.
+
+2) 
+how to write a for loop in python to start from a specific value and ends at specific value 
