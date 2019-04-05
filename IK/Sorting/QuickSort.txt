@@ -1,0 +1,7 @@
+Quick Sort -->
+
+We should know how to write algos and its every part in english clearly.
+Means, we should be able to write each function (sub-routine) and its part in pure english clearly.
+
+
+
