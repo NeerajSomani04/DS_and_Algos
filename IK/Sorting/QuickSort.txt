@@ -3,5 +3,24 @@ Quick Sort -->
 We should know how to write algos and its every part in english clearly.
 Means, we should be able to write each function (sub-routine) and its part in pure english clearly.
 
+Why quick sort considered in-place algorithm and not constant space algorithm. 
+
+Answer: because quick sort use some space to put function calls in stack. Althugh, it doesn't require extra memory space array like merge sort, it still need some space or function stack and hence not constant space algorithm.
+
+Worst case time complexity is O(n2) and space complexity is O(n). 
+time complexity --> depends on how many space will be taken by array at max at any specific given time. 
+
+first the array will of n size, then n-1, then n-2, then n-3, ...... , till array of size 1. Hence, at any given time i will be O(n2)
+
+space complexity --> at any given time at max there will be n function in the stack to run and hence O(n) will be time complexity.
+
+Best Case --> time complexity will be O(n log n). because in best case pivot will divide the array in equal size and every time it will keep dividing array in equal sizes unill it its the single element in array.
+Hence, n --> 2*n/2 --> 4*n/4 --> 8*n/8 
+hence, n * # no of levels --> which is O (n log n)
+
+Space complexity --> at any given time how many max function calls will be running. that is the height of the tree and that is O (log n).
+
+
+average case --> will be in between best and worst case. but mostly average case is same as best case.
 
 
