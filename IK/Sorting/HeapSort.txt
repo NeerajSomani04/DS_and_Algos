@@ -1,0 +1,27 @@
+Heap Sort -->
+
+Its Left Complete Binary Tree
+Heap Property --> Parent_value must be less than kid_value
+
+Benefits --> Since it is left complete
+1) Its Balanced --> then performace is Log (n)
+2) Can be stored in array 
+
+In this case we are assuming to start heap array index with 1.
+
+hence, below are few key points:
+1) valid (i) --> would always be in this scenario i <= size and i >= 1
+2) left of i --> 2i index
+3) right of i --> 2i + 1 index
+4) parent of i --> i / 2 (only integer value of division)
+
+Psudo-code for heap insert operation -->
+
+void insert(v) {
+  put the value in heap [size + 1]
+  size++
+  i = size
+  while (i/2 >= 1 && heap property violeted between i and i/2){
+    swap with parents
+    }
+    
