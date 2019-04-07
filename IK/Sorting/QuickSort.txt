@@ -36,7 +36,9 @@ Why quick sort considered in-place algorithm and not constant space algorithm.
 Answer: because quick sort use some space to put function calls in stack. Althugh, it doesn't require extra memory space array like merge sort, it still need some space or function stack and hence not constant space algorithm.
 
 Worst case time complexity is O(n2) and space complexity is O(n). 
-time complexity --> depends on how many space will be taken by array at max at any specific given time. 
+time complexity --> time complexity majorly depends on the partition function.
+
+depends on how many space will be taken by array at max at any specific given time. 
 
 first the array will of n size, then n-1, then n-2, then n-3, ...... , till array of size 1. Hence, at any given time i will be O(n2)
 
