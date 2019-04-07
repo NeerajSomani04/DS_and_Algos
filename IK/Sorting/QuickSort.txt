@@ -60,3 +60,83 @@ two approach discussed for partitioning -->
 
 2) 
 how to write a for loop in python to start from a specific value and ends at specific value 
+
+
+
+
+
+Quick Sort -->
+
+1) choose pivot
+2) partition
+
+best case --> if we choose median as pivot then n * log n
+worst case --> if we choose pivot which divid the array constant time at one side and linear time at other side. then O(n^2)
+
+space complexity can warry from log n to n.
+
+
+Merge Sort -->
+
+what is stability --> when there are duplicate values, we always travel in linear manner and as long as we maintain order of those duplicate values.
+
+Why stability is important -->
+
+Collections.Sort() --> uses quick sort because collections are objects and objects are multi-dimensions
+Arrays.Sort() --> uses merge sort because this is on primitive values
+
+Why merge sort is stable because it uses extra space and it always 
+
+
+Heap sort --> 
+what is heap --> left complete BT --> this is balance tree with no gap in between elements.
+
+Locality of reference -->
+
+
+Question 1 --> Given an array of Integer, find an element of rank k. (kth element) --> This is a kind of quick sort
+
+int findKthElement(arr, k){
+  start = arr[0]
+  end = arr.size()
+  c = choosePivot()
+  swap arr[c] with arr[start]
+  p = partition(arr, start, end)
+  if p = k return p
+  else if p < k {
+    return partition(arr, p+1, end)
+  }
+  else {
+    partition(arr, start, p-1)
+  }
+}
+
+
+Question 2 --> Given two sets of interger, find if one is subset of other.
+
+sets are sorted
+remember, the question is about set and hence no doubt about dplicate values.
+
+time complexity --> max(m, n) where m is size of set 1, and n is size of set 2
+
+boolean isSubset(arr1, arr2){
+  m = arr1.size()
+  n = arr2.size()
+  i, j, matches = 0
+  while ( i < m && j < n){
+    if (arr1[i] == arr2[j]) { 
+      i++;
+      j++;
+      matches++;
+    }
+    else if (arr1[i] < arr2[j]) { i++; }
+    else j++;
+    }
+    return matches == min(m,n)
+}
+
+what interviewer is checking -->
+1. speed of coding checks in case of simple problems.
+2. 
+
+
