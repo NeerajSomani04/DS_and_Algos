@@ -1,7 +1,35 @@
+IK Team key points -->
+
+1) candidate should not hope that they are ready. They should know and feel that they are ready and comfortable for interview. 
+2) We should be convienced why we wrote a code in such way, why the time and space complexity is what we thought. 
+3) We need to indulge in coding then only we can feel and work on it.
+4) We should know how to write algos and its every part in english clearly. Means, we should be able to write each function (sub-routine) and its part in pure english clearly.
+5) Try to think of writing a module seperately (few lines of code that can work independently). This will make overall program more clean, readable and easy to debug in-case of issues.
+6) In interview if you can just mention about overall program and not implement sub-routine. That should be fine, and just cross check with interviewer that does he want you to implement sub-routine. Or he want to ask some other advance questions.
+7) We should always be very clear about what is the job description of a function. 
+
 Quick Sort -->
 
-We should know how to write algos and its every part in english clearly.
-Means, we should be able to write each function (sub-routine) and its part in pure english clearly.
+void QSort( arr, start, end) {
+  if (start >= end) return
+  c = choosePivot(arr, start, end) --> by this function we will implement a logic to choose pivot somehow
+  swap arr[c] with arr[start]
+  p = partition(arr, start, end) --> by this function we will implement the logic to partition the array and return the index value of pivot.
+  QSort(arr, start, p-1)
+  QSort(arr, p+1, end)
+  return
+  }
+
+int choosePivot(arr, start, end){
+  This function returns a value between start and end. 
+  for example, we can implement to return always the first value of array that is
+  return arr[start]
+}
+
+int partition(arr, start, end){
+
+}
+
 
 Why quick sort considered in-place algorithm and not constant space algorithm. 
 
@@ -20,9 +48,9 @@ hence, n * # no of levels --> which is O (n log n)
 
 Space complexity --> at any given time how many max function calls will be running. that is the height of the tree and that is O (log n).
 
-
 average case --> will be in between best and worst case. but mostly average case is same as best case.
 
+What is stability of algorithm --> 
 
 two approach discussed for partitioning -->
 
