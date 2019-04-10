@@ -1,0 +1,8 @@
+Chapter 2 --> Analysis of Program in terms of Time and Space complexity
+
+“Big-O” execution time of common operations on Python lists and dictionaries.
+What Is Algorithm Analysis? Comparision of your program with Another and evalute whos program is better. 
+Now the question is How to evaluate? 
+
+1) Readability --> also known as Easily Maintainable.
+2) On the other hand it can also be evaluated based upon the amount of computing resources that each algorithm uses.
