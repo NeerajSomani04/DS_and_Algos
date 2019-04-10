@@ -1,0 +1,34 @@
+Count path problem explained by Matt --> 
+
+Recursive Problem approach -->
+
+1) recursive step --> break problem into instances of same problem
+2) base case --> a small problem that one can easily solve
+
+Leap of Faith --> you must assume the function that you are writing is already correct when you call it.
+
+
+Recusion Engine has 2 pieces --> State and Transitions
+
+But it has some special cases as well ---> base case and guards
+
+int countPaths (int [] [] grid, int row, int col) {
+  int numRows = grid.length;
+  int numCols = grid[0].length;
+  
+  if (row >= numRows) { // this is guards
+    return 0;
+    }
+  if (col >= numCols) { // this is guards
+    return 0;
+    }
+ if (row == numRow-1 && col == numCol-1) { // this is base case
+    return 1;
+ }
+  int numRight = countPaths (grid, row, col+1); // from this line its all about recusrion
+  int numDown = countPaths (grid, row+1, col);
+  return numRight + numDown;
+  
+
+}
+
