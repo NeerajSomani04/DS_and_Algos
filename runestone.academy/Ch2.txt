@@ -6,3 +6,8 @@ Now the question is How to evaluate?
 
 1) Readability --> also known as Easily Maintainable.
 2) On the other hand it can also be evaluated based upon the amount of computing resources that each algorithm uses.
+which is 
+   --> space complexity (space or memory an algorithm requires to solve the problem)
+   --> time complexity  (how much time it took)
+   
+ 
