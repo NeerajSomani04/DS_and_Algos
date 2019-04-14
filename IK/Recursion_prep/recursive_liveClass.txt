@@ -1,0 +1,108 @@
+Ques 1 --> count the no of subset that has given sum:
+
+input --> {1, ,2 3}
+sum --> 3
+
+output --> 2 because {1,2} and {3} 
+
+Solution --> 
+
+int subsetCount(list<int> input, int sum){
+  return subsetCount1(input, sum, 0);
+  }
+int subsetCount1(list<int> input, int sum, i+1) {
+  if ( sum == 0) return 1;
+  if (sum < 0 || i == input.size()) return 0;
+return subsetCount1(input, sum - input[i], i+1) +  subsetCount1(input, sum, i+1)
+}
+
+
+thumb rule for tree problems -->
+
+Time complexity --> O(b^h) --> O (2^n)
+Space Complexity --> O(h) --> O (n)
+
+where b --> braches of tree and h will be height of tree
+
+Recursion --> will always use stacks for space (memory) and hence we need to consider stack in space complexity whenever we use recursion.
+
+Question 2 --> how many different ways to Climb the Stairs, given n = no of stairs and how many steps we can climb in one shot.
+
+"n" stairs to climb --> 
+Input --> n = 3 and step = {1, 2}
+
+Output --> 3 total ways
+
+Notes --> 
+this is function -->
+         k 
+f(n) --> E f(n - step[i])
+         i = 0
+
+base case --> 
+  0, N < 0
+  1, N == 0
+
+
+NOtes --> recusrion function can use on wrapper function that can perfomr all cleaning work to perform recusive function easy.
+
+Time Complexity --> O (b^h) --> O (k^N)
+S --> O (N)
+
+int countWays(int N, list steps){
+  if (N <= 0) return 0; # this is boundary or initial condition where N == 0 is the initial point
+  return countWaysHandler(N, steps)
+  {
+
+int countWaysHandler(N, steps) {
+  if (N < 0) return 0;
+  if (N == 1) return 1;
+  int result = 0;
+  for (int i =0; i < step.size(); i++) {
+    result += countWaysHandler(N-step[i], steps)
+    retrun result
+    }
+  
+recusrion vs Iterative way (Dynamic programming) -->
+
+why iteration is better -->
+1) stack memory is more in recusrsive approach than iterative way (Dynamic programming)
+2) cache locality (locality of reference) is more in recusrsive
+
+
+Question 3 --> Queens Problem (given a chess board of size N, how many ways N queens can be placed in a chess board so that only one Queen can be placed in a row such that it can't threaten each other).
+Solution --> optimal ways 
+
+approach --> find out where you place your first queen
+
+void FunctionQueenPlaces(N) {
+  int board[N];
+  return functionQueenHandler(N, board, 0)
+}
+
+void functionQueenHandler(int N, board int[], int i) {
+  if (i == N) { printBoard(N, board)
+  return
+  for (j = 0; j < N; j++) {
+    if (!hasConflict(board, i, j)) {
+      board[i] = j;
+      functionQueenHandler(N, board , i+1)
+    }
+  }
+}
+
+Question 4 --> Tower of Hanoi -->
+Time complex --> O(2^n)
+space complex --> O(n)
+
+Question 5 --> RegEx Matcher --> 
+
+input --> "abcaad"
+Reg Ex --> "ab*c*"
+
+output --> true/false
+
+Solution --> 
+binary tree is always easy and simple
+
+base case --> true, i & j reached end
