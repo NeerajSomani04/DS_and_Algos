@@ -1,0 +1,3 @@
+python collections class -->
+
+1. DefaultDict is similar to dictionary (dict), but with default values in the definition as well. If you didn't use a defaultdict you'd have to check to see if that key exists, and if it doesn't, set it to what you want. 
