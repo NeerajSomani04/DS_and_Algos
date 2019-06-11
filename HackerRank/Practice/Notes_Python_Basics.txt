@@ -2,12 +2,34 @@ python collections class -->
 
 1. DefaultDict is similar to dictionary (dict), but with default values in the definition as well. If you didn't use a defaultdict you'd have to check to see if that key exists, and if it doesn't, set it to what you want. 
 
+from collections import defaultdict
+d = defaultdict(list)
+
 2. collections.Counter() 
 A counter is a container that stores elements as dictionary keys, and their counts are stored as dictionary values.
 
 from collections import Counter
 
+2. namedtuples are easy to create, lightweight object types. This is like key-value pair in tuple, you don’t have to use integer indices for accessing members of a tuple. you can use keys to access element of tuple.
+example code -->
+>>> from collections import namedtuple
+>>> Car = namedtuple('Car','Price Mileage Colour Class') ## here first aurgument is name of the tuple and second aurgument are all keys.
+>>> xyz = Car(Price = 100000, Mileage = 30, Colour = 'Cyan', Class = 'Y')
+>>> print xyz
+Car(Price=100000, Mileage=30, Colour='Cyan', Class='Y')
+>>> print xyz.Class
+Y
 
+3. collections.OrderedDict
+An OrderedDict is a dictionary that remembers the order of the keys that were inserted first. If a new entry overwrites an existing entry, the original insertion position is left unchanged.
+
+example -->
+from collections import OrderedDict
+ordered_dictionary = OrderedDict()
+OrderedDict([('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)])
+
+4. collections.deque() --> double-ended queue. It can be used to add or remove elements from both ends.
+memory efficient appends and pops from either side, O(1) performance in either direction.
 
 -----------------------------
 
