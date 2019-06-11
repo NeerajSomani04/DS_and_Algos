@@ -1,3 +1,19 @@
 python collections class -->
 
 1. DefaultDict is similar to dictionary (dict), but with default values in the definition as well. If you didn't use a defaultdict you'd have to check to see if that key exists, and if it doesn't, set it to what you want. 
+
+2. collections.Counter() 
+A counter is a container that stores elements as dictionary keys, and their counts are stored as dictionary values.
+
+from collections import Counter
+
+
+
+-----------------------------
+
+Calendar Module
+The calendar module allows you to output calendars and provides additional useful functions for them.
+
+example -->
+import calendar
+print calendar.TextCalendar(firstweekday=6).formatyear(2015)
