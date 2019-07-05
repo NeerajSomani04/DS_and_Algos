@@ -4,5 +4,11 @@ It helps in solving the issue of multi-colinearity and try to find the relations
 
 Dimesion Reduction --> When we convert a large number of predictors into small number of predictors, using some mathematical formula that doesn't change the importance of dimentions then it is known as dimension reduction. 
 
+In PCA we are looking for the direction, in which there is greatest amount of variance happening.
+steps -->
+--> first you need to find the covariance matrix
+--> then you find the eigen values and eigen matrix of those values.
+Eigen vectors are ordered by the magnitude of corresponding eigen values "lambda".
+
 
 
